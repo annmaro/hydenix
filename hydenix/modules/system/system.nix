@@ -56,9 +56,7 @@ in
       bash-completion # Add bash-completion package
 
       hypridle
-      # My apps
-      fd # Simple, fast and user-friendly alternative to find
-      ncdu # Disk usage analyzer with an ncurses interface
+      
       
     ];
 
