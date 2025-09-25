@@ -18,7 +18,7 @@ in
 
     useSystemdBoot = lib.mkOption {
       type = lib.types.bool;
-      default = true;
+      default = false;
       description = "Whether to use systemd-boot (true) or GRUB (false)";
     };
 
