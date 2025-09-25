@@ -57,6 +57,12 @@ in
 
       hypridle
       
+      #My apps
+      fd # Simple, fast and user-friendly alternative to find  
+      ncdu # Disk usage analyzer with an ncurses interface
+      nix-output-monitor # Processes output of Nix commands to show helpful and pretty information
+      nvd # Nix/NixOS package version diff tool
+      nh # Yet another nix cli helper
       
     ];
 
