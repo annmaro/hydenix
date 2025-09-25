@@ -40,6 +40,7 @@ in
       pavucontrol
       pamixer
       playerctl
+      easyeffectss
     ];
   };
 }
