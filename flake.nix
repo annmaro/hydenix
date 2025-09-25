@@ -18,7 +18,7 @@
     };
 
     hyde = {
-      url = "github:HyDE-Project/HyDE/168287f2f10e95a4a9a623c955c7e08147c48472";
+      url = "github:annmaro/HyDE/d6b9d28fb73853ab8963a643598a5f3966a8404f";
       flake = false;
     };
 
@@ -36,7 +36,7 @@
       inputs.nixpkgs.follows = "hydenix-nixpkgs";
     };
     hyde-config = {
-      url = "github:annmaro/hyde-config";
+      url = "github:richen604/hyde-config";
       inputs.nixpkgs.follows = "hydenix-nixpkgs";
     };
 
