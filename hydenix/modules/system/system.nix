@@ -33,7 +33,7 @@ in
       gnumake # Build automation tool
       git # distributed version control system
       fzf # command line fuzzy finder
-      polkit_gnome # authentication agent for privilege escalation
+      hyprpolkitagent # authentication agent for privilege escalation
       dbus # inter-process communication daemon
       upower # power management/battery status daemon
       mesa # OpenGL implementation and GPU drivers
@@ -132,19 +132,25 @@ in
     security.polkit.enable = true;
     security.pam.services.swaylock = { };
     security.rtkit.enable = true;
-    systemd.user.services.polkit-gnome-authentication-agent-1 = {
-      description = "polkit-gnome-authentication-agent-1";
+    systemd.user.services.hyprpolkitagent = {
+      description = "Hyprpolkitagent - Polkit authentication agent";
       wantedBy = [ "graphical-session.target" ];
       wants = [ "graphical-session.target" ];
       after = [ "graphical-session.target" ];
       serviceConfig = {
         Type = "simple";
-        ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+        ExecStart = "${pkgs.hyperpolkitagent}/libexec/hyperpolkitagent";
         Restart = "on-failure";
         RestartSec = 1;
         TimeoutStopSec = 10;
       };
     };
+
+   wayland.windowManager.hyprland.settings = {
+    exec-once = [
+        "systemctl --user start hyprpolkitagent"
+        ];
+        };
 
     # For trash-cli to work properly
     services.gvfs.enable = true;
