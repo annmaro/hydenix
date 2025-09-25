@@ -62,7 +62,7 @@ in
       ncdu # Disk usage analyzer with an ncurses interface
       nix-output-monitor # Processes output of Nix commands to show helpful and pretty information
       nvd # Nix/NixOS package version diff tool
-      nh # Yet another nix cli helper
+      peazip # File and archive manager
       
     ];
 
