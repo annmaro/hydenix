@@ -36,7 +36,7 @@
       inputs.nixpkgs.follows = "hydenix-nixpkgs";
     };
     hyde-config = {
-      url = "github:richen604/hyde-config";
+      url = "github:annmaro/hyde-config";
       inputs.nixpkgs.follows = "hydenix-nixpkgs";
     };
 

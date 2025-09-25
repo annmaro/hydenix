@@ -48,11 +48,11 @@ in
   hydenix = {
     enable = true;
     hostname = "hydenix";
-    timezone = "America/Vancouver";
-    locale = "en_CA.UTF-8";
+    timezone = "Asia/Kolkata";
+    locale = "en_IN";
   };
 
-  users.users.hydenix = {
+  users.users.anand = {
     isNormalUser = true;
     initialPassword = "hydenix";
     extraGroups = [
