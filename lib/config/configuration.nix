@@ -32,7 +32,7 @@ in
       inherit inputs;
     };
 
-    users."hydenix" =
+    users."anand" =
       { ... }:
       {
         imports = [
@@ -52,7 +52,7 @@ in
     locale = "en_CA.UTF-8";
   };
 
-  users.users.hydenix = {
+  users.users.anand = {
     isNormalUser = true;
     initialPassword = "hydenix";
     extraGroups = [
