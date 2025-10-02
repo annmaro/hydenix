@@ -18,7 +18,7 @@
     };
 
     hyde = {
-      url = "github:annmaro/HyDE/f5169c28bb5594fa5eff3a4027cbc35825ba3af0";
+      url = "github:annmaro/HyDE/473fe76a8b3ed27c6d4b640bbea5edae0afebd51";
       flake = false;
     };
 
